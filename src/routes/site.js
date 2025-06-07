@@ -3,7 +3,7 @@ const router = express.Router();
 
 const newsController = require('../app/controllers/SiteController');
 
-router.use('/search', newsController.search);
-router.use('/', newsController.home);
+router.get('/search', newsController.search);
+router.get('/', newsController.home);
 
 module.exports = router;
